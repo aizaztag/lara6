@@ -50,7 +50,7 @@ class BaseRepository implements BaseContract
      * @param string $sortBy
      * @return mixed
      */
-    public function all($columns = array('*'), string $orderBy = 'id', string $sortBy = 'asc')
+    public function all($columns = ['*'], string $orderBy = 'id', string $sortBy = 'asc')
     {
         return $this->model->orderBy($orderBy, $sortBy)->get($columns); // this is same as:  Model::orderBy('id', 'asc')->get('*');
     }
