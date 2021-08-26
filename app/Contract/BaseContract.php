@@ -31,7 +31,7 @@ interface BaseContract
      * @param string $sortBy
      * @return mixed
      */
-    public function all($columns = array('*'), string $orderBy = 'id', string $sortBy = 'desc');
+    public function all($columns = ['*'], string $orderBy = 'id', string $sortBy = 'desc');
 
     /**
      * Find one by ID
